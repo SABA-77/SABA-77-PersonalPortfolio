@@ -2,197 +2,375 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style.css">
-<script src="script.js"></script>
-<title>SABA | Personal Portfolio</title>
+    <meta name="description"
+        content="SABA - Full Stack Web Developer Portfolio">
 
+    <title>SABA | Personal Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- defer makes JavaScript wait until HTML is loaded -->
+    <script src="script.js" defer></script>
+    <script src="darkMode.js" defer></script>
 </head>
 
 <body>
 
-    <!-- Navigation -->
-    <nav  >
+    <!-- ================= NAVIGATION ================= -->
 
-        <h2 class="name">SABA</h2>
+    <header>
+        <nav class="navbar">
 
-        <ul class="top-nav">
-           
-<!------------------------------------------------------------------------------->
-           <li><a class="b1" href ="#home">Home</a></li>      
-           <li><a class="b2"href="#about">About</a></li>                    
-           <li><a class="b3"href="#projects">Projects</a></li>                
-           <li><a class="b4"href="#contact">Contact</a></li>  
-           <button id="darkmode" onclick="changecolor()">DarkMode</button> </li>  
-                     
-        </ul>
+            <a href="#home" class="logo">SABA</a>
 
-    </nav>
+            <ul class="top-nav">
 
-<!------------------------------------------------------------------------------->
-    <!-- Home Section -->
-    <section  id= "home" class="home">
+                <li>
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
 
-        <div class="image">
-            <img src="img/WhatsApp Image 2026-08-11 at 7.45.20 PM.jpeg" 
-            alt="SABA profile photo">
-        <a class="resume" href="./doc/SabaResume.pdf">Resume</a> 
-    </div>
-        
-        <div class="intro">
+                <li>
+                    <a class="nav-link" href="#about">About</a>
+                </li>
 
-            <p>Hello, I'm</p>
+                <li>
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
 
-            <h1>SABA</h1>
+                <li>
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
 
-            <h2>Full Stack Web Developer</h2>
+                <li>
+                    <button id="darkmode" type="button">
+                        🌙 Dark Mode
+                    </button>
+                </li>
+
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <!-- ================= HOME ================= -->
+
+    <main>
+
+        <section id="home" class="home">
+
+            <div class="image-container">
+
+                <img
+                    src="./images/WhatsApp Image 2026-08-11 at 7.45.20 PM.jpeg"
+                    alt="SABA profile photo"
+                    class="profile-image"
+                >
+
+                <a
+                    class="resume"
+                    href="./doc/SabaResume.pdf"
+                    target="_blank"
+                >
+                    View Resume
+                </a>
+
+            </div>
+
+
+            <div class="intro">
+
+                <p class="hello">Hello, I'm</p>
+
+                <h1>SABA</h1>
+
+                <h2>Full Stack Web Developer</h2>
+
+                <p class="intro-text">
+                    I really enjoy solving real-world problems and creating
+                    useful solutions through web development and IoT projects.
+                    My goal is to build technology that makes everyday life
+                    easier and more enjoyable.
+                </p>
+
+                <a href="#contact" class="primary-button">
+                    Contact Me
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ABOUT ================= -->
+
+        <section id="about" class="section-card">
+
+            <h2>About Me</h2>
 
             <p>
-               I really enjoy solving real world problem and making solution 
-               by creating valuble IOT projects. to make Everyone life easy and joyfull 
-               if anyone is intrested contact me we can make our socitey make easy and joyfull.
+                I am an MCA student interested in web development and
+                software development. I enjoy learning new technologies,
+                building useful applications, and solving real-world problems.
             </p>
 
-        </div>
+            <p>
+                I enjoy creating websites and continuously improving my
+                programming and development skills.
+            </p>
 
-    </section>
-
-
-    <!-- About Section -->
-    <section id="about">
-
-        <h2>About Me</h2>
-
-        <p>
-            I am a MCA student interested in
-            web development and software development.
-        do you have same intrest like that please contact me we can work togethor.
-        </p>
-
-        <p>
-            I enjoy creating websites and learning new
-            technologies.
-        </p>
-
-    </section>
+        </section>
 
 
-    <!-- Projects Section -->
-    <section id="projects">
+        <!-- ================= PROJECTS ================= -->
 
-        <h2>My Projects</h2>
+        <section id="projects">
 
-        <div class="projects">
+            <h2>My Projects</h2>
 
-            <div class="project1">
-                <h3>Weather App</h3>
+            <div class="projects">
 
-                <p>
-                    A weather application that provides
-                    real-time weather information for
-                    any location.
-                </p>
-            <a href="file:///C:/Users/SABA/OneDrive/Desktop/New%20folder/projects/weather%20app/index.html">Weather App</a>
-            
-        </div>
+                <!-- Project 1 -->
+                <article class="project-card">
+
+                    <div class="project-icon">
+                        ☁️
+                    </div>
+
+                    <h3>Weather App</h3>
+
+                    <p>
+                        A weather application that provides real-time
+                        weather information for different locations.
+                    </p>
+
+                    <!-- Replace this with your actual deployed URL -->
+                    <a href="#" class="project-link">
+                        View Project →
+                    </a>
+
+                </article>
 
 
-            <div class="project2">
-                <h3>Calculator</h3>
+                <!-- Project 2 -->
+                <article class="project-card">
 
-                <p>
-                    A calculator project created while
-                    learning web development.
-                </p>
-            <br>
-                <a href="file:///C:/Users/SABA/OneDrive/Desktop/New%20folder/projects/CalculatorApp-main/index.html">Calculator</a>
-            
+                    <div class="project-icon">
+                        🧮
+                    </div>
+
+                    <h3>Calculator</h3>
+
+                    <p>
+                        A simple calculator application created while
+                        learning JavaScript and web development.
+                    </p>
+
+                    <!-- Replace this with your actual deployed URL -->
+                    <a href="#" class="project-link">
+                        View Project →
+                    </a>
+
+                </article>
+
+
+                <!-- Project 3 -->
+                <article class="project-card">
+
+                    <div class="project-icon">
+                        ✅
+                    </div>
+
+                    <h3>To-Do App</h3>
+
+                    <p>
+                        A simple task management application for organizing
+                        and managing daily tasks.
+                    </p>
+
+                    <!-- Replace this with your actual deployed URL -->
+                    <a href="#" class="project-link">
+                        View Project →
+                    </a>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FEEDBACK ================= -->
+
+        <section id="feedback" class="section-card">
+
+            <h2>Feedback</h2>
+
+            <div class="feedback-table">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Feedback</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <!-- Feedback can be added here later -->
+                    </tbody>
+
+                </table>
+
             </div>
 
 
-            <div class="project3">
-                <h3>To-Do App</h3>
+            <form class="form" id="feedbackForm">
 
-                <p>
-                    A simple application for managing
-                    daily tasks.
-                </p>
-            <br>
-            <a href="file:///C:/Users/SABA/OneDrive/Desktop/New%20folder/projects/TodoList/index.html">Todolist</a>
-            
+                <label for="name">
+                    Name
+                </label>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your name"
+                    required
+                >
+
+
+                <label for="email">
+                    Email
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required
+                >
+
+
+                <label for="comment">
+                    Comment
+                </label>
+
+                <textarea
+                    id="comment"
+                    name="comment"
+                    placeholder="Enter your comments or doubts"
+                    rows="4"
+                ></textarea>
+
+
+                <label for="feedbackText">
+                    Feedback
+                </label>
+
+                <textarea
+                    id="feedbackText"
+                    name="feedback"
+                    placeholder="Enter your feedback"
+                    rows="4"
+                ></textarea>
+
+
+                <button type="submit">
+                    Submit Feedback
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <!-- ================= CONTACT ================= -->
+
+        <section id="contact" class="section-card">
+
+            <h2>Contact Me</h2>
+
+            <p>
+                📧 Email:
+                <a href="mailto:Sabacr745@gmail.com">
+                    Sabacr745@gmail.com
+                </a>
+            </p>
+
+            <p>
+                📱 Phone:
+                <a href="tel:+916379896382">
+                    +91 6379896382
+                </a>
+            </p>
+
+        </section>
+
+
+        <!-- ================= SOCIAL MEDIA ================= -->
+
+        <section id="socialMedia" class="section-card">
+
+            <h2>Follow Me</h2>
+
+            <div class="social-links">
+
+                <!-- Replace # with your real profile URLs -->
+
+                <a href="#" target="_blank">
+                    Instagram
+                </a>
+
+                <a href="#" target="_blank">
+                    GitHub
+                </a>
+
+                <a href="#" target="_blank">
+                    LinkedIn
+                </a>
+
             </div>
 
-        </div>
-
-    </section>
-
-<!-- Feedback Section -->
-    <section id="feedback">
-
-        <h2>Feedback</h2>
-<table>
-   <tr>
-   <th>NAME</th>
-    <th>Email</th>
-    <th>Feedback for future improvements</th>
-
-   </tr>
-    
-</table>
- 
-<section class="form">   
-
-<form action="form"></form>
-<label for="Your name">Name</label><input type="text" placeholder="Enter your name">
-<label for="Your name">Email</label><input type="text" placeholder="Enter your Email">
-<label for="Your name">Comment</label><input type="text" placeholder="Enter your Comments or douts">
-<label for="Your name">Feedback</label><input type="text" placeholder="Enter your Feedback of your opinion">
-<button>Submit</button>
-</form>
-
-</section>
-       
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-
-        <h2>Contact Me</h2>
-
-        <p>Email: Sabacr745@gmail.com</p>
-
-        <p>Phone: +91 6379896382</p>
-
-    </section> <br>
-<!-- SocialMedia Section -->
-    <section id="SocialMedia">
-
-        <h2>Follow Me on</h2>
-<a href="">instagram</a>
-<a href="">GitHub</a>
-<a href="">linkedin</a>
-
-    </section>
-<section class="userlogin">
-<a href="file:///C:/Users/SABA/OneDrive/Desktop/New%20folder/projects/user/login/login.html">login |</a>
-<a href="">Signup</a>
-
-</section>
+        </section>
 
 
-<!-- Footer -->
+        <!-- ================= LOGIN ================= -->
+
+        <section class="userlogin">
+
+            <a href="#">
+                Login
+            </a>
+
+            <span>|</span>
+
+            <a href="#">
+                Signup
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
     <footer class="footer">
 
-        <p>© 2026 SABA. All Rights Reserved.</p>
+        <p>
+            © 2026 SABA. All Rights Reserved.
+        </p>
 
     </footer>
-
 
 </body>
 
 </html>
-
