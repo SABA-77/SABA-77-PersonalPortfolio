@@ -1,0 +1,908 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f7f8fc;
+    color: #172033;
+}
+
+
+/* NAVBAR */
+
+.navbar {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 8%;
+
+    background: white;
+
+    border-bottom: 1px solid #e8e8ee;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 100;
+}
+
+
+.logo {
+    font-size: 25px;
+    font-weight: 800;
+}
+
+
+.logo span {
+    color: #635bff;
+}
+
+
+.navbar nav {
+    display: flex;
+    gap: 30px;
+}
+
+
+.navbar nav a {
+    text-decoration: none;
+    color: #444;
+    font-size: 15px;
+}
+
+
+.navbar nav a:hover {
+    color: #635bff;
+}
+
+
+/* HERO */
+
+.hero {
+    min-height: 600px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 80px 20px;
+
+    background:
+        radial-gradient(
+            circle at top,
+            #e9e7ff,
+            #f7f8fc 55%
+        );
+}
+
+
+.hero-content {
+    max-width: 800px;
+}
+
+
+.badge {
+    display: inline-block;
+
+    padding: 8px 16px;
+
+    border-radius: 30px;
+
+    background: white;
+
+    color: #635bff;
+
+    font-size: 14px;
+
+    margin-bottom: 25px;
+}
+
+
+.hero h1 {
+    font-size: 60px;
+
+    line-height: 1.1;
+
+    margin-bottom: 25px;
+}
+
+
+.hero h1 span {
+    color: #635bff;
+}
+
+
+.hero-text {
+    max-width: 600px;
+
+    margin: auto;
+
+    font-size: 19px;
+
+    line-height: 1.7;
+
+    color: #687083;
+
+    margin-bottom: 35px;
+}
+
+
+.primary-btn {
+    display: inline-block;
+
+    background: #635bff;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 15px 25px;
+
+    border-radius: 9px;
+
+    font-weight: bold;
+}
+
+
+.primary-btn:hover {
+    background: #5149e8;
+}
+
+
+/* SECTION */
+
+.tools-section {
+    padding: 90px 8%;
+}
+
+
+.section-heading {
+    text-align: center;
+
+    margin-bottom: 50px;
+}
+
+
+.small-title {
+    color: #635bff;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 10px;
+}
+
+
+.section-heading h2 {
+    font-size: 38px;
+
+    margin-bottom: 15px;
+}
+
+
+.section-heading p {
+    color: #707789;
+}
+
+
+/* GRID */
+
+.tools-grid {
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 22px;
+}
+
+
+/* CARD */
+
+.tool-card {
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    border: 1px solid #e7e7ee;
+
+    transition: 0.2s;
+}
+
+
+.tool-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 15px 40px rgba(30, 30, 60, 0.08);
+}
+
+
+.tool-icon {
+    font-size: 35px;
+
+    margin-bottom: 18px;
+}
+
+
+.tool-card h3 {
+    font-size: 21px;
+
+    margin-bottom: 10px;
+}
+
+
+.tool-card p {
+    color: #707789;
+
+    line-height: 1.6;
+
+    min-height: 50px;
+}
+
+
+.tool-card button {
+    margin-top: 20px;
+
+    width: 100%;
+
+    padding: 11px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background: #635bff;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-weight: bold;
+}
+
+
+.tool-card button:hover {
+    background: #5149e8;
+}
+
+
+/* WORKSPACE */
+
+.workspace {
+    padding: 60px 8%;
+
+    min-height: 700px;
+
+    background: #f1f2f8;
+}
+
+
+.hidden {
+    display: none;
+}
+
+
+.workspace-header {
+    max-width: 900px;
+
+    margin: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    margin-bottom: 30px;
+}
+
+
+.workspace-header h2 {
+    font-size: 30px;
+}
+
+
+.back-btn {
+    border: none;
+
+    background: white;
+
+    padding: 10px 15px;
+
+    border-radius: 7px;
+
+    cursor: pointer;
+}
+
+
+/* TOOL CONTAINER */
+
+.tool-container {
+    max-width: 900px;
+
+    margin: auto;
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 15px;
+
+    border: 1px solid #e2e3ea;
+}
+
+
+#toolDescription {
+    margin-bottom: 25px;
+
+    color: #6c7280;
+}
+
+
+/* UPLOAD */
+
+.upload-box {
+    border: 2px dashed #b9b9cc;
+
+    min-height: 220px;
+
+    border-radius: 15px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    cursor: pointer;
+
+    text-align: center;
+
+    gap: 10px;
+}
+
+
+.upload-box:hover {
+    border-color: #635bff;
+
+    background: #fafaff;
+}
+
+
+.upload-icon {
+    font-size: 45px;
+}
+
+
+.upload-box input {
+    display: none;
+}
+
+
+/* FILE LIST */
+
+#fileList {
+    margin-top: 20px;
+}
+
+
+.file-item {
+    padding: 12px;
+
+    background: #f5f5f9;
+
+    border-radius: 7px;
+
+    margin-bottom: 8px;
+
+    display: flex;
+
+    justify-content: space-between;
+}
+
+
+/* OPTIONS */
+
+#toolOptions {
+    margin-top: 25px;
+}
+
+
+.option-group {
+    margin-bottom: 20px;
+}
+
+
+.option-group label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-weight: bold;
+}
+
+
+.option-group input {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 7px;
+}
+
+
+/* PROCESS */
+
+.process-btn {
+    margin-top: 25px;
+
+    width: 100%;
+
+    padding: 15px;
+
+    background: #635bff;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+.process-btn:hover {
+    background: #5149e8;
+}
+
+
+/* STATUS */
+
+#status {
+    margin-top: 20px;
+
+    text-align: center;
+
+    font-weight: bold;
+}
+
+
+.success {
+    color: #16833b;
+}
+
+
+.error {
+    color: #d22;
+}
+
+
+/* ABOUT */
+
+.about {
+    padding: 100px 20px;
+
+    text-align: center;
+
+    max-width: 800px;
+
+    margin: auto;
+}
+
+
+.about h2 {
+    font-size: 38px;
+
+    margin-bottom: 20px;
+}
+
+
+.about p {
+    color: #6c7280;
+
+    line-height: 1.8;
+
+    margin-bottom: 15px;
+}
+
+
+/* FOOTER */
+
+footer {
+    padding: 50px 20px;
+
+    background: #111522;
+
+    color: white;
+
+    text-align: center;
+}
+
+
+footer .logo {
+    margin-bottom: 15px;
+}
+
+
+footer p {
+    color: #aeb4c4;
+
+    margin: 8px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+
+    .tools-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 0 20px;
+    }
+
+    .navbar nav {
+        display: none;
+    }
+
+    .tools-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .tool-container {
+        padding: 20px;
+    }
+
+}
+
+/* ==========================================
+   OPENPDF - DARK MODE
+   Separate dark mode stylesheet
+   ========================================== */
+
+body.dark-mode {
+    background: #111318;
+    color: #f1f1f1;
+}
+
+/* NAVBAR */
+
+body.dark-mode .navbar {
+    background: #181a20;
+    border-bottom-color: #2b2e36;
+}
+
+body.dark-mode .navbar nav a {
+    color: #d5d7df;
+}
+
+body.dark-mode .navbar nav a:hover {
+    color: #8b83ff;
+}
+
+body.dark-mode .logo {
+    color: #ffffff;
+}
+
+
+/* HERO */
+
+body.dark-mode .hero {
+    background:
+        radial-gradient(
+            circle at top,
+            #252044,
+            #111318 60%
+        );
+}
+
+body.dark-mode .badge {
+    background: #1d2028;
+    color: #9b94ff;
+}
+
+body.dark-mode .hero-text {
+    color: #aeb3c0;
+}
+
+
+/* TOOLS */
+
+body.dark-mode .tools-section {
+    background: #111318;
+}
+
+body.dark-mode .section-heading p {
+    color: #aeb3c0;
+}
+
+body.dark-mode .tool-card {
+    background: #181a20;
+    border-color: #2b2e36;
+}
+
+body.dark-mode .tool-card p {
+    color: #aeb3c0;
+}
+
+body.dark-mode .tool-card:hover {
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.35);
+}
+
+
+/* WORKSPACE */
+
+body.dark-mode .workspace {
+    background: #0d0f13;
+}
+
+body.dark-mode .workspace-header h2 {
+    color: #ffffff;
+}
+
+body.dark-mode .back-btn {
+    background: #181a20;
+    color: #ffffff;
+}
+
+body.dark-mode .tool-container {
+    background: #181a20;
+    border-color: #2b2e36;
+}
+
+body.dark-mode #toolDescription {
+    color: #aeb3c0;
+}
+
+
+/* UPLOAD */
+
+body.dark-mode .upload-box {
+    border-color: #444854;
+    background: #15171c;
+}
+
+body.dark-mode .upload-box:hover {
+    border-color: #635bff;
+    background: #1b1d28;
+}
+
+
+/* FILE LIST */
+
+body.dark-mode .file-item {
+    background: #242730;
+    color: #eeeeee;
+}
+
+
+/* OPTIONS */
+
+body.dark-mode .option-group label {
+    color: #eeeeee;
+}
+
+body.dark-mode .option-group input,
+body.dark-mode .option-group select {
+    background: #111318;
+    color: #ffffff;
+    border-color: #414550;
+}
+
+
+/* STATUS */
+
+body.dark-mode #status {
+    color: #eeeeee;
+}
+
+
+/* ABOUT */
+
+body.dark-mode .about {
+    background: #111318;
+}
+
+body.dark-mode .about p {
+    color: #aeb3c0;
+}
+
+
+/* FOOTER */
+
+body.dark-mode footer {
+    background: #08090c;
+}
+
+body.dark-mode footer p {
+    color: #9da2af;
+}
+
+
+/* DARK MODE BUTTON */
+
+.dark-mode-toggle {
+    border: none;
+    background: #242730;
+    color: #ffffff;
+
+    padding: 9px 14px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+.dark-mode-toggle:hover {
+    background: #635bff;
+}
+
+
+
+
+
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+
+    font-family: Arial, sans-serif;
+
+    background-color: #f1f3f4;
+
+    margin: 0;
+
+    padding: 30px;
+
+}
+
+
+#feedbackform{
+
+    max-width: 600px;
+
+    margin: auto;
+
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+}
+
+
+h1 {
+
+    margin-top: 0;
+
+    color: #333;
+
+}
+
+
+p {
+
+    color: #666;
+
+}
+
+
+label {
+
+    display: block;
+
+    margin-top: 18px;
+
+    margin-bottom: 8px;
+
+    font-weight: bold;
+
+}
+
+
+
+
+
+textarea {
+
+    min-height: 100px;
+
+    resize: vertical;
+
+}
+
+
+button {
+
+    margin-top: 25px;
+
+    padding: 12px 25px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    background-color: #673ab7;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+}
+
+
+button:hover {
+
+    background-color: #512da8;
+
+}
+
+
+#result {
+
+    margin-top: 20px;
+
+    font-weight: bold;
+
+}

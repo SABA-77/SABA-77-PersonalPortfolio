@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<center>
+    <title>Login</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="login-container">
+
+        <h1>Login</h1>
+
+        <form id="loginForm">
+
+            <!-- Email -->
+            <label for="email">Email</label>
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+            >
+
+            <p id="emailError" class="error"></p>
+
+
+            <!-- Password -->
+            <label for="password">Password</label>
+
+            <input
+                type="password"
+                id="password"
+                placeholder="Enter your password"
+            >
+
+            <p id="passwordError" class="error"></p>
+
+
+            <!-- Show Password -->
+            <div class="show-password">
+
+                <input type="checkbox" id="showPassword">
+
+                <label for="showPassword">Show Password</label>
+
+            </div>
+
+
+            <!-- Submit -->
+            <button type="submit">
+                Sign In
+            </button>
+
+            <p id="successMessage" class="success"></p>
+
+        </form> <br> <br>
+
+        <a href="#">Home</a>
+
+    </div>
+
+</center>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

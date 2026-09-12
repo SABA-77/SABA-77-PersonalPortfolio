@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Sign Up</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <div class="signup-container">
+
+        <h1>Create Account</h1>
+
+        <p class="subtitle">
+            Sign up to create your account
+        </p>
+
+
+        <form id="signupForm">
+
+
+            <!-- Full Name -->
+
+            <label for="name">
+                Full Name
+            </label>
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Enter your full name"
+            >
+
+            <p id="nameError" class="error"></p>
+
+
+
+            <!-- Email -->
+
+            <label for="email">
+                Email
+            </label>
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+            >
+
+            <p id="emailError" class="error"></p>
+
+
+
+            <!-- Phone -->
+
+            <label for="phone">
+                Phone Number
+            </label>
+
+            <input
+                type="tel"
+                id="phone"
+                placeholder="Enter your phone number"
+            >
+
+            <p id="phoneError" class="error"></p>
+
+
+
+            <!-- Password -->
+
+            <label for="password">
+                Password
+            </label>
+
+            <input
+                type="password"
+                id="password"
+                placeholder="Create a password"
+            >
+
+            <p id="passwordError" class="error"></p>
+
+
+
+            <!-- Confirm Password -->
+
+            <label for="confirmPassword">
+                Confirm Password
+            </label>
+
+            <input
+                type="password"
+                id="confirmPassword"
+                placeholder="Confirm your password"
+            >
+
+            <p id="confirmPasswordError" class="error"></p>
+
+
+
+            <!-- Show Password -->
+
+            <div class="show-password">
+
+                <input
+                    type="checkbox"
+                    id="showPassword"
+                >
+
+                <label for="showPassword">
+                    Show Password
+                </label>
+
+            </div>
+
+
+
+            <!-- Terms -->
+
+            <div class="terms">
+
+                <input
+                    type="checkbox"
+                    id="terms"
+                >
+
+                <label for="terms">
+                    I agree to the Terms & Conditions
+                </label>
+
+            </div>
+
+            <p id="termsError" class="error"></p>
+
+
+
+            <!-- Submit -->
+
+            <button type="submit">
+                Create Account
+            </button>
+
+
+            <!-- Success message -->
+
+            <p
+                id="successMessage"
+                class="success">
+            </p>
+
+        </form>
+
+
+
+        <!-- Login link -->
+
+        <p class="login-link">
+
+            Already have an account?
+
+            <a href="../login/login.html">
+                Login
+            </a>
+
+        </p>
+
+
+        <a class="home" href="../index.html">
+            Home
+        </a>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

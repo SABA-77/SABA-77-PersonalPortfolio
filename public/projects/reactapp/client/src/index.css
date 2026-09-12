@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+display: fixed;
+   
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+}
+h1 {
+    color: white;
+    margin-bottom: 20px;
+    background-color: brown;
+}
+.weather-app {
+    width: 90%;
+    max-width: 450px;
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+
+    text-align: center;
+}
+
+.weather-app h1 {
+    margin-bottom: 25px;
+    color: #222;
+}
+
+.search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.search-box input {
+    flex: 1;
+
+    padding: 12px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+
+    outline: none;
+
+    font-size: 16px;
+}
+
+.search-box input:focus {
+    border-color: #4facfe;
+}
+
+.search-box button {
+    padding: 12px 18px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #2196f3;
+
+    color: white;
+
+    font-size: 15px;
+
+    cursor: pointer;
+}
+
+.search-box button:hover {
+    background: #1976d2;
+}
+
+#message {
+    min-height: 22px;
+    color: red;
+    margin-bottom: 10px;
+}
+
+.weather-card {
+    margin-top: 10px;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    background: #f5f9ff;
+}
+
+.weather-card h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.weather-icon {
+    font-size: 70px;
+    margin: 10px 0;
+}
+
+.weather-card h3 {
+    font-size: 45px;
+    color: #222;
+
+    margin-bottom: 5px;
+}
+
+#condition {
+    color: #666;
+
+    font-size: 18px;
+
+    margin-bottom: 25px;
+}
+
+.weather-details {
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 10px;
+}
+
+.detail {
+    flex: 1;
+
+    padding: 15px 5px;
+
+    background: white;
+
+    border-radius: 10px;
+}
+
+.detail span {
+    font-size: 25px;
+}
+
+.detail p {
+    font-size: 13px;
+
+    color: #777;
+
+    margin: 5px 0;
+}
+
+.detail strong {
+    font-size: 14px;
+}
+
+/* Mobile */
+
+@media (max-width: 500px) {
+
+    .weather-app {
+        padding: 20px;
+    }
+
+    .search-box {
+        flex-direction: column;
+    }
+
+    .search-box button {
+        width: 100%;
+    }
+
+    .weather-details {
+        flex-direction: column;
+    }
+}
+
+.a1, .a2, .a3, .a4  {
+    background-color: brown;
+   display: flex;
+   flex-direction: column;
+  gap: 12px;
+}
+/* =========================
+   DARK MODE
+========================= */
+
+body.dark-mode {
+    background: #121212;
+    color:gold
+}
+
+/* Main Weather App */
+body.dark-mode .weather-app {
+    background: #1e1e1e;
+    color:gold
+    
+}
+
+/* Heading */
+body.dark-mode h1 {
+    background: #333333;
+    color:gold
+}
+
+/* Search Input */
+body.dark-mode #cityInput {
+    background: #dfdada;
+    color:#2196f3;
+    font-weight: bold;
+ 
+}
+
+body.dark-mode #cityInput::placeholder {
+    color: #aaaaaa;
+}
+
+/* Search Button */
+body.dark-mode #searchBtn {
+    background: #2196f3;
+    color: white;
+}
+
+/* Dark Mode Button */
+body.dark-mode .dark-mode-btn {
+    background: #444444;
+    color:gold
+}
+
+/* Weather Card */
+body.dark-mode .weather-card {
+    background: #252525;
+    color:gold
+}
+
+/* City Name */
+body.dark-mode #cityName {
+    color:gold
+}
+
+/* Temperature */
+body.dark-mode #temperature {
+    color:gold
+}
+
+/* Weather Condition */
+body.dark-mode #condition {
+    color: #cccccc;
+}
+
+/* Weather Details */
+body.dark-mode .weather-details {
+    
+    color:gold
+}
+
+/* Detail text */
+body.dark-mode .detail p {
+    background-color: #333333;
+    color: #bbbbbb;
+}
+
+body.dark-mode .detail strong {
+     background-color: #333333;
+   
+    color:gold
+}
+
+/* Message */
+body.dark-mode #message {
+   
+    color: #cccccc;
+}

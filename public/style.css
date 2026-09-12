@@ -120,7 +120,7 @@ body.dark-mode .navbar {
 header {
 
     position: sticky;
-
+    border-bottom: 1px solid var(--primary);
     top: 0;
 
     z-index: 1000;
@@ -138,9 +138,8 @@ header {
     align-items: center;
 
     justify-content: space-between;
-
+    box-shadow: var(--shadow);
     background: rgba(135, 125, 182, 0.9);
-
     backdrop-filter: blur(10px);
 
     transition:
@@ -154,7 +153,7 @@ header {
 .logo {
 
     display: inline-block;
-
+    box-shadow: var(--shadow);
     padding: 8px 14px;
 
     background: var(--card);
@@ -176,7 +175,7 @@ header {
 
 
 .logo:hover {
-
+    box-shadow: var(--shadow);
     transform: translateY(-3px);
 
 }
@@ -185,7 +184,7 @@ header {
 /* Navigation list */
 
 .top-nav {
-
+    box-shadow:c var(--shadow);
     display: flex;
 
     align-items: center;
@@ -199,7 +198,7 @@ header {
 /* Navigation links */
 
 .nav-link {
-
+    box-shadow:c var(--shadow);
     display: inline-block;
 
     padding: 9px 14px;
@@ -344,8 +343,8 @@ header {
 
 
 .resume:hover {
-
-    color: var(--accent);
+    color: rgb(25, 3, 25);
+    
 
 }
 
@@ -443,7 +442,6 @@ section {
 
 
 section > h2 {
-
     font-size: 32px;
 
     margin-bottom: 30px;
@@ -462,8 +460,6 @@ section > h2 {
     max-width: 1100px;
 
     margin: 40px auto;
-
-    padding: 60px 8%;
 
     background: var(--card);
 
@@ -492,6 +488,7 @@ section > h2 {
 
 .projects {
 
+    box-shadow: var(--shadow);
     display: grid;
 
     grid-template-columns:
@@ -507,7 +504,6 @@ section > h2 {
 
 
 .project-card {
-
     padding: 30px;
 
     background: var(--card);
@@ -616,7 +612,7 @@ body.dark-mode td {
 ===================================================== */
 
 .form {
-
+box-shadow: var(--shadow);
     width: 90%;
 
     max-width: 650px;
@@ -653,9 +649,7 @@ body.dark-mode td {
 .form textarea {
 
     width: 100%;
-
     padding: 12px;
-
     border: 2px solid transparent;
 
     border-radius: 8px;
@@ -991,4 +985,10 @@ body.dark-mode .footer {
 
     }
 
+}
+.name {
+    font-size: 24px;
+    font-weight: bold;
+    background: var(--card);
+    color: var(--primary);
 }

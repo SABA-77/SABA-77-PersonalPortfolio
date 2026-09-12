@@ -1,0 +1,23 @@
+{
+  "name": "openpdf",
+  "version": "1.0.0",
+  "description": "Free and open-source PDF tools for students and everyone.",
+  "private": true,
+  "scripts": {
+    "start": "npx serve public"
+  },
+  "keywords": [
+    "pdf",
+    "pdf-tools",
+    "merge-pdf",
+    "split-pdf",
+    "open-source"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "pdf-lib": "^1.17.1"
+  },
+  "devDependencies": {
+    "serve": "^14.2.4"
+  }
+}
